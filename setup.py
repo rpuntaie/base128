@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # vim: fileencoding=utf-8 
 
-#sudo python setup.py bdist_wheel --universal
+#sudo python setup.py bdist_wheel
 #twine upload ./dist/base128*.whl
 
 from setuptools import setup
@@ -39,6 +39,7 @@ conf = dict(name='base128',
     install_requires=[
         'bitarray>=0.8.1'
     ],
+    python_requires='>3.3',
     tests_require=[],
     entry_points={
          'console_scripts': [
