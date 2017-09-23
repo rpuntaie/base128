@@ -299,7 +299,7 @@ def main(args=None):
              raise argparse.ArgumentTypeError("fenc must be 1, 5, 7, latin1, cyrillic or greek")
         return ivalue
 
-    if args id None:
+    if args is None:
         parser = argparse.ArgumentParser(description = __doc__,
                 formatter_class = argparse.ArgumentDefaultsHelpFormatter)
         
