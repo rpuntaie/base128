@@ -11,7 +11,7 @@ import os
 #https://pypi.python.org/pypi?%3Aaction=list_classifiers
 #for classifiers
 
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
